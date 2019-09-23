@@ -172,7 +172,7 @@ const component = Component.extend({
   }),
 
   actions: {
-    change(files) {
+    selected(files) {
       get(this, 'queue')._addFiles(files, 'browse');
       this.element.querySelector('input').value = null;
     }
